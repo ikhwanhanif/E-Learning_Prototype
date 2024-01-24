@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".AdminTambahSoalActivity">
+
+    <TextView
+        android:id="@+id/buatSoalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Buat Soal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/pertanyaanEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buatSoalText"
+        android:hint="Pertanyaan" />
+
+    <EditText
+        android:id="@+id/jawabanAEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pertanyaanEditText"
+        android:hint="Jawaban A" />
+
+    <EditText
+        android:id="@+id/jawabanBEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawabanAEditText"
+        android:hint="Jawaban B" />
+
+    <EditText
+        android:id="@+id/jawabanCEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawabanBEditText"
+        android:hint="Jawaban C" />
+
+    <EditText
+        android:id="@+id/jawabanDEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawabanCEditText"
+        android:hint="Jawaban D" />
+
+    <TextView
+        android:id="@+id/jawabanText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pilih Jawaban"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/jawabanDEditText"
+        />
+
+    <!-- RadioGroup untuk memilih jawaban benar -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/jawabanText"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+
+        <RadioButton
+            android:id="@+id/radioButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/tambahSoalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_yellow"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="Tambah Soal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/tambahSoalBtn"
+        >
+
+        <Button
+            android:id="@+id/resetLeaderboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/light_yellow"
+            android:text="Reset Leaderboard"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/resetSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/light_yellow"
+            android:text="Reset Soal"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ikhwan.hanif.elearningprototype.user.UserDashboard">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courseRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rL"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/course_list"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:id="@+id/rL"
+        android:background="@color/light_yellow"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_home_24"
+            app:tint="@color/grey" />
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/image1"
+            android:layout_toStartOf="@id/image3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_video_library_24"
+            app:tint="@color/black" />
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_admin_panel_settings_24"
+            app:tint="@color/grey" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

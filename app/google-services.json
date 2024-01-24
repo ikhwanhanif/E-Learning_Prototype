@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492510683958",
+    "project_id": "e-learning-prototype",
+    "storage_bucket": "e-learning-prototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492510683958:android:c84a10a884ba37c7f8c997",
+        "android_client_info": {
+          "package_name": "ikhwan.hanif.elearningprototype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKI_7wOxX2AzBjw9h6BOp9Yysj-fusL4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

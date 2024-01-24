@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/elearning_icon"
+        android:label="E-Learning"
+        android:roundIcon="@drawable/elearning_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ELearningApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".BuatSoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserJawabSoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTambahSoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahSoalJawabSoalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RaportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionRobotikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionIpaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionMatematikaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WrongActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".ShowScoreActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".RightActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".QuestionActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".SoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.UserRealDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".PlayCourse"
+            android:exported="true" />
+        <activity
+            android:name=".tutor.AddCourse"
+            android:exported="true" />
+        <activity
+            android:name=".PlayVideo"
+            android:exported="true" />
+        <activity
+            android:name=".admin.AdminResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tutor.TutorResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user.UserResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.AdminDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".tutor.TutorDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".user.UserDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".admin.AdminRegister"
+            android:exported="true" />
+        <activity
+            android:name=".tutor.TutorRegister"
+            android:exported="true" />
+        <activity
+            android:name=".user.UserRegister"
+            android:exported="true" />
+        <activity
+            android:name=".admin.AdminLogin"
+            android:exported="true" />
+        <activity
+            android:name=".tutor.TutorLogin"
+            android:exported="true" />
+        <activity
+            android:name=".user.UserLogin"
+            android:exported="true" />
+        <activity
+            android:name=".AddVideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TambahSoalJawabSoalActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/jawabSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_yellow"
+        android:layout_centerInParent="true"
+        android:text="Kerjakan Soal"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        />
+    <Button
+        android:id="@+id/leaderBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawabSoal"
+        android:text="Leaderboard"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_yellow"
+        />
+
+</RelativeLayout>
