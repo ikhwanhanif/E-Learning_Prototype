@@ -1,3 +1,6 @@
+# About
+E-Learning is an Android-based learning application using Android Studio and Firebase as a database, there is an admin feature that can upload videos of learning materials and upload questions
+
 # screenshot
 
 ![IMG-20240123-WA0006](https://github.com/ikhwanhanif/E-Learning_Prototype/assets/108711453/05d17fbb-4400-471c-a0f4-df05393f8f9e)
